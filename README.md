@@ -15,12 +15,16 @@ Instant Feedback: Provides a clear strength rating (Weak, Medium, or Strong) and
 Ensure you have Python 3.x installed on your system.
 
 2. Clone the Repository
+```
 git clone https://github.com/Parima15-creator/Password-Strength-Checker.git
 cd Password-Strength-Checker
+```
 
 4. Run the Script
 Execute the program from the root directory using the following command:
+```
 python src/password_checker.py
+```
 
 📂 Project Structure
 A specific folder structure is required for the script to locate the common password database:

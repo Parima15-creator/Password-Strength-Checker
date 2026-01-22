@@ -25,7 +25,7 @@ python src/password_checker.py
 📂 Project Structure
 A specific folder structure is required for the script to locate the common password database:
 Password-Strength-Checker/
-
+```
 ├── data/
 │   └── common_password.txt  # Dictionary of insecure passwords
 ├── src/
@@ -33,6 +33,7 @@ Password-Strength-Checker/
 ├── .gitignore               # Git configuration
 ├── LICENSE                  # MIT License
 └── README.md                # Project documentation
+```
 
 🛡️ How It Works
 The script calculates a security score by checking for:

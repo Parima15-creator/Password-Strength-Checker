@@ -18,20 +18,21 @@ Ensure you have Python 3.x installed on your system.
 git clone https://github.com/Parima15-creator/Password-Strength-Checker.git
 cd Password-Strength-Checker
 
-3. Run the Script
+4. Run the Script
 Execute the program from the root directory using the following command:
 python src/password_checker.py
 
 📂 Project Structure
 A specific folder structure is required for the script to locate the common password database:
 Password-Strength-Checker/
+
 ├── data/
 │   └── common_password.txt  # Dictionary of insecure passwords
 ├── src/
 │   └── pasword_checker.py   # Main logic and complexity analysis
+├── .gitignore               # Git configuration
 ├── LICENSE                  # MIT License
 └── README.md                # Project documentation
-
 
 🛡️ How It Works
 The script calculates a security score by checking for:

@@ -1,4 +1,4 @@
-#Password Strength Analyzer
+# Password Strength Analyzer
 A Python-based password strength analyzer designed to evaluate passwords using real-world security principles. This project demonstrates my interest in cybersecurity, password security best practices, and secure coding principles.
 
 It goes beyond simple rule-checking by combining character variety, common password detection, pattern recognition, and entropy-based scoring to provide actionable feedback to users.

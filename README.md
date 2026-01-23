@@ -35,7 +35,7 @@ Passwords found in common password lists are immediately flagged as high risk.
 3. Entropy calculation
 Password entropy is calculated in bits to quantify randomness. Higher entropy = stronger password.
 
-After evaluation, the password is classified as:
+After evaluation, the password is classified as:  
 -Weak
 -Medium
 -Strong
@@ -76,10 +76,10 @@ Libraries: re (regular expressions), math
 Data: Custom common password list for high-risk detection
 
 ## Next Steps / Future Enhancements
-Detect alphabetic sequences (e.g., abcd, zyxw)
-Detect keyboard patterns (e.g., qwerty, asdf)
-Add CLI color output or optional web interface
-Provide estimated crack time for user awareness
+- Detect alphabetic sequences (e.g., abcd, zyxw)
+- Detect keyboard patterns (e.g., qwerty, asdf)
+- Add CLI color output or optional web interface
+- Provide estimated crack time for user awareness
 
 ## 🚀 Installation & Usage
 1. Prerequisites

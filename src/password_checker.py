@@ -3,7 +3,7 @@ import os
 import math
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-COMMON_PASSWORDS_PATH = os.path.join(BASE_DIR, "data", "common_passwords.txt")
+COMMON_PASSWORDS_PATH = os.path.join(BASE_DIR, "data", "common_password.txt")
 
 #Password length based score
 def length_score(password):

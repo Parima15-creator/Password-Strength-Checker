@@ -3,7 +3,7 @@ A Python-based password strength analyzer designed to evaluate passwords using r
 
 It goes beyond simple rule-checking by combining character variety, common password detection, pattern recognition, and entropy-based scoring to provide actionable feedback to users.
 
-##✨ Features
+## ✨ Features
 - Length-based scoring: Encourages longer passwords (8–16+ characters) for stronger security.
 
 - Character diversity checks: Ensures inclusion of uppercase letters, lowercase letters, digits, and special characters.
@@ -20,7 +20,7 @@ It goes beyond simple rule-checking by combining character variety, common passw
 
 - User-friendly feedback: Provides actionable suggestions to improve password security.
 
-##🛡️ How It Works
+## 🛡️ How It Works
 The analyzer scores a password on multiple aspects:
 
 1. Length and character variety
@@ -62,7 +62,7 @@ Password Score: 12 / 12
 Feedback:
 • Password is highly unpredictable (good randomness)
 ```
-##Why This Project Matters
+## Why This Project Matters
 This project demonstrates:
 - Practical understanding of password security principles 
 - Ability to implement security rules in Python
@@ -70,18 +70,18 @@ This project demonstrates:
 - Attention to user-friendly security feedback
 It serves as a portfolio piece showing my interest and capability in cybersecurity fundamentals.
 
-##Technical Stack
+## Technical Stack
 Language: Python 3
 Libraries: re (regular expressions), math
 Data: Custom common password list for high-risk detection
 
-##Next Steps / Future Enhancements
+## Next Steps / Future Enhancements
 Detect alphabetic sequences (e.g., abcd, zyxw)
 Detect keyboard patterns (e.g., qwerty, asdf)
 Add CLI color output or optional web interface
 Provide estimated crack time for user awareness
 
-##🚀 Installation & Usage
+## 🚀 Installation & Usage
 1. Prerequisites
 Ensure you have Python 3.x installed on your system.
 
@@ -97,7 +97,7 @@ Execute the program from the root directory using the following command:
 python src/password_checker.py
 ```
 
-##📂 Project Structure
+## 📂 Project Structure
 A specific folder structure is required for the script to locate the common password database:
 Password-Strength-Checker/
 ```
@@ -110,5 +110,5 @@ Password-Strength-Checker/
 └── README.md                # Project documentation
 ```
 
-##📜 License
+## 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.

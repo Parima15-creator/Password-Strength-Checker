@@ -44,22 +44,36 @@ Users also receive feedback messages highlighting strengths and weaknesses.
 
 ### Example Usage
 ```
-Enter your password: Abc123!@
+Enter your password: aa11
 
-Password Strength: Medium
-Password Score: 6 / 12
+Password Strength: Weak
+Password Score: 2 / 12
 
 Feedback:
 • Consider using at least 12 characters for stronger security
+• Password is too short (minimum 8 characters)
+• Missing uppercase letter
+• Missing special character (! @ # $ % ^ & * ? _ - + =)
 • Password is highly predictable (low entropy)
 ```
 ```
-Enter your password: tQ7#Lx!9R2a$
+Enter your password: Abc1234@#
 
-Password Strength: Strong
-Password Score: 12 / 12
+Password Strength: Medium
+Password Score: 5 / 12
 
 Feedback:
+• Consider using at least 12 characters for stronger security
+• Contains sequential numbers (e.g. 1234, 9876)
+```
+```
+Enter your password: Hi12@#llm!
+
+Password Strength: Strong
+Password Score: 9 / 12
+
+Feedback:
+• Consider using at least 12 characters for stronger security
 • Password is highly unpredictable (good randomness)
 ```
 ## Why This Project Matters

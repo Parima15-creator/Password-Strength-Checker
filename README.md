@@ -43,19 +43,23 @@ After evaluation, the password is classified as:
 Users also receive feedback messages highlighting strengths and weaknesses.
 
 ### Example Usage
+1. 
 ```
-Enter your password: aa11
+Enter your password: dragon
 
 Password Strength: Weak
-Password Score: 2 / 12
+Password Score: 0 / 12
 
 Feedback:
 • Consider using at least 12 characters for stronger security
 • Password is too short (minimum 8 characters)
 • Missing uppercase letter
+• Missing number
 • Missing special character (! @ # $ % ^ & * ? _ - + =)
+• Password found in common password list (high risk)
 • Password is highly predictable (low entropy)
 ```
+2.
 ```
 Enter your password: Abc1234@#
 
@@ -66,6 +70,7 @@ Feedback:
 • Consider using at least 12 characters for stronger security
 • Contains sequential numbers (e.g. 1234, 9876)
 ```
+3.
 ```
 Enter your password: Hi12@#llm!
 

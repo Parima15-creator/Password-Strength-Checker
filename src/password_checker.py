@@ -4,7 +4,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 COMMON_PASSWORDS_PATH = os.path.join(BASE_DIR, "data", "common_passwords.txt")
 
 def length_score(password):
-    if len(password) >= 12:
+    if len(password) >= 16:
+        return 4
+    elif len(password) >= 12:
         return 3
     elif len(password) >= 8:
         return 1
@@ -39,11 +41,32 @@ def is_common_password(password, common_passwords):
     return password.lower() in common_passwords
 
 
+def has_sequential_numbers(password):
+    digits = [int(ch) for ch in password if ch.isdigit()]
+
+    if len(digits) < 4:
+        return False
+
+    for i in range(len(digits) - 3):
+        seq = digits[i:i+4]
+
+        if all(seq[j] + 1 == seq[j + 1] for j in range(3)):
+            return True
+
+        if all(seq[j] - 1 == seq[j + 1] for j in range(3)):
+            return True
+
+    return False
+
+
 def calculate_strength(password, common_passwords):
     score = 0
     feedback = []
 
     score += length_score(password)
+    if length_score(password) < 3:
+        feedback.append("Consider using at least 12 characters for stronger security")
+
 
     if len(password) < 8:
         feedback.append("Password is too short (minimum 8 characters)")
@@ -72,13 +95,18 @@ def calculate_strength(password, common_passwords):
         score = 0
         feedback.append("Password found in common password list (high risk)")
 
+    if has_sequential_numbers(password):
+        score -= 2
+        feedback.append("Contains sequential numbers (e.g. 1234, 9876)")
+
+    score = max(score, 0)
     return score, feedback
 
 
 def classify_strength(score):
-    if score <= 2:
+    if score <= 3:
         return "Weak"
-    elif score <= 4:
+    elif score <= 7:
         return "Medium"
     else:
         return "Strong"
@@ -93,6 +121,7 @@ def main():
     strength = classify_strength(score)
 
     print("\nPassword Strength:", strength)
+    print("Password Score:", score, "/ 12")
 
     if feedback:
         print("\nFeedback:")
@@ -102,3 +131,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

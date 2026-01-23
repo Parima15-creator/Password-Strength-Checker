@@ -42,7 +42,7 @@ After evaluation, the password is classified as:
 
 Users also receive feedback messages highlighting strengths and weaknesses.
 
-Example Usage
+### Example Usage
 ```
 Enter your password: Abc123!@
 

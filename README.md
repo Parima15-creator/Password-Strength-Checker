@@ -36,9 +36,9 @@ Passwords found in common password lists are immediately flagged as high risk.
 Password entropy is calculated in bits to quantify randomness. Higher entropy = stronger password.
 
 After evaluation, the password is classified as:  
--Weak
--Medium
--Strong
+-Weak  
+-Medium  
+-Strong  
 
 Users also receive feedback messages highlighting strengths and weaknesses.
 
@@ -91,7 +91,7 @@ git clone https://github.com/Parima15-creator/Password-Strength-Checker.git
 cd Password-Strength-Checker
 ```
 
-4. Run the Script
+3. Run the Script
 Execute the program from the root directory using the following command:
 ```
 python src/password_checker.py

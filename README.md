@@ -71,9 +71,9 @@ This project demonstrates:
 It serves as a portfolio piece showing my interest and capability in cybersecurity fundamentals.
 
 ## Technical Stack
-Language: Python 3
-Libraries: re (regular expressions), math
-Data: Custom common password list for high-risk detection
+Language: Python 3  
+Libraries: re (regular expressions), math  
+Data: Custom common password list for high-risk detection  
 
 ## Next Steps / Future Enhancements
 - Detect alphabetic sequences (e.g., abcd, zyxw)

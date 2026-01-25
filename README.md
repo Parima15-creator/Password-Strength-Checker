@@ -51,12 +51,12 @@ Password Strength: Weak
 Password Score: 0 / 12
 
 Feedback:
+• Password found in common password list (high risk)
 • Consider using at least 12 characters for stronger security
 • Password is too short (minimum 8 characters)
 • Missing uppercase letter
 • Missing number
 • Missing special character (! @ # $ % ^ & * ? _ - + =)
-• Password found in common password list (high risk)
 • Password is highly predictable (low entropy)
 ```
 2.
@@ -72,13 +72,12 @@ Feedback:
 ```
 3.
 ```
-Enter your password: Hi12@#llm!
+Enter your password: KP@i_am_100%Great_
 
 Password Strength: Strong
-Password Score: 9 / 12
+Password Score: 12 / 12
 
 Feedback:
-• Consider using at least 12 characters for stronger security
 • Password is highly unpredictable (good randomness)
 ```
 ## Why This Project Matters

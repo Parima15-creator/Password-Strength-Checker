@@ -41,7 +41,8 @@ def load_common_passwords(filename):
 
 #Checks if password is there in common password list
 def is_common_password(password, common_passwords):
-    return password.lower() in common_passwords
+    pwd = password.lower()
+    return any(common in pwd for common in common_passwords)
 
 #Checks for sequential numbers
 def has_sequential_numbers(password):
@@ -99,6 +100,10 @@ def calculate_entropy(password):
 def calculate_strength(password, common_passwords):
     score = 0
     feedback = []
+
+    if is_common_password(password, common_passwords):
+        feedback.append("Password found in common password list (high risk)")
+    
     length_points = length_score(password)
     score += length_points
 
@@ -127,10 +132,6 @@ def calculate_strength(password, common_passwords):
         score += 2
     else:
         feedback.append("Missing special character (! @ # $ % ^ & * ? _ - + =)")
-
-    if is_common_password(password, common_passwords):
-        score = 0
-        feedback.append("Password found in common password list (high risk)")
 
     if has_sequential_numbers(password):
         score -= 2
